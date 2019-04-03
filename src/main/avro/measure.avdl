@@ -1,0 +1,8 @@
+@namespace("com.athenahealth")
+protocol MeasureInterface {
+
+  record Measure {
+    long id;
+    string test;
+  }
+}

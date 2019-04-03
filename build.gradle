@@ -13,11 +13,17 @@ sourceCompatibility = '11'
 
 repositories {
 	mavenCentral()
+	maven {
+		name "Confluent"
+		url "http://packages.confluent.io/maven/"
+	}
 }
 
 ext {
 	set('springCloudVersion', 'Greenwich.SR1')
 }
+
+
 
 dependencies {
 	api 'org.apache.kafka:kafka-streams:2.2.0'
@@ -28,10 +34,12 @@ dependencies {
 	//compile group: 'org.apache.avro', name: 'avro-compiler', version: '1.8.2'
 	compile group: 'io.confluent', name: 'kafka-avro-serializer', version: '5.2.0'
 	compile group: 'io.confluent', name: 'kafka-streams-avro-serde', version: '5.2.0'
-	
+
 	testCompile 'org.springframework.boot:spring-boot-starter-test:2.1.3.RELEASE'
 	testCompile 'org.springframework.kafka:spring-kafka-test'
 }
+
+
 
 dependencyManagement {
 	imports {
