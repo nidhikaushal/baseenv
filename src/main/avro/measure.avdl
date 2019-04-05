@@ -1,4 +1,4 @@
-@namespace("com.athenahealth")
+@namespace("com.athenahealth.schema")
 protocol MeasureInterface {
 
   record Measure {

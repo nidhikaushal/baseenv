@@ -1,6 +1,6 @@
 package com.athenahealth.sabubase;
 
-import com.athenahealth.Measure;
+import com.athenahealth.schema.Measure;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
